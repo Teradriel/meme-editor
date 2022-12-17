@@ -1,0 +1,10 @@
+header {
+  background-color: #fcfcfc;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+}

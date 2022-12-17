@@ -1,0 +1,89 @@
+body,
+header {
+  background: rgb(62, 1, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(62, 1, 66, 1) 6%,
+    rgba(19, 19, 173, 1) 59%,
+    rgba(0, 161, 255, 1) 100%
+  );
+  color: bisque;
+}
+
+.too-small {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-fluid {
+    display: none;
+  }
+
+  .too-small {
+    visibility: visible;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2.5rem;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.col {
+  width: 50%;
+  height: 75%;
+}
+
+img {
+  height: 35rem;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme > img {
+  background: cover;
+  margin-bottom: -5px;
+}
+
+.meme .top {
+  top: 1rem;
+}
+
+.meme .bottom {
+  bottom: 1rem;
+}
+
+.meme .top,
+.meme .bottom {
+  cursor: pointer;
+  position: absolute;
+  font-size: 36px;
+  text-align: center;
+  margin: 0.3rem 0;
+  padding: 0;
+  font-family: impact, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
